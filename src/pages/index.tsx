@@ -39,7 +39,7 @@ export default function Home() {
                   <circle cx="11" cy="11" r="7" fill="none" stroke="#000" strokeWidth="2" />
                   <line x1="16.5" y1="16.5" x2="21" y2="21" stroke="#000" strokeWidth="2" strokeLinecap="round" />
                 </svg>
-                <input className="search-input" type="search" placeholder="Search" />
+                <input className="search-input" type="search" placeholder="Search" aria-label="Search" />
               </div>
               <a className="cart" href="#" aria-label="Cart">
                 <svg viewBox="0 0 24 24" className="cart-icon" aria-hidden="true">
@@ -57,37 +57,36 @@ export default function Home() {
           <div className="hero-inner">
             <div className="hero-text">
               <p className="eyebrow">BreakOff</p>
-              <h1 className="hero-title">BreakOff <span>- Timeless Clothing</span></h1>
+              <h1 className="hero-title">BREAKOFF <span>—</span> <span>TIMETESS CLOTHING</span></h1>
               <p className="hero-sub">Everyday essentials redefined</p>
               <a className="btn btn--primary" href="#">SHOP NEW IN</a>
             </div>
             <div className="hero-visual" aria-hidden="true">
-              <div className="hero-image">
-                <div className="hero-figure">
-                  <div className="hero-cloak" aria-hidden="true"></div>
-                  <div className="hero-head" aria-hidden="true"></div>
-                  <div className="hero-torso" aria-hidden="true">
-                    <div className="hero-sweater" aria-hidden="true"></div>
-                  </div>
-                  <div className="hero-arm" aria-hidden="true"></div>
-                  <div className="hero-hand" aria-hidden="true"></div>
-                  <div className="hero-chain" aria-hidden="true"></div>
+              <div className="hero-figure">
+                <div className="hero-cloak" aria-hidden="true"></div>
+                <div className="hero-head" aria-hidden="true"></div>
+                <div className="hero-torso" aria-hidden="true">
+                  <div className="hero-sweater" aria-hidden="true"></div>
                 </div>
-                <div className="hero-float" aria-hidden="true">
-                  <svg viewBox="0 0 48 48" className="hero-swatch" aria-hidden="true">
-                    <rect x="2" y="6" width="44" height="36" rx="4" fill="#e9dfd2" stroke="#d8c8b4" strokeWidth="1.5" />
-                    <rect x="8" y="10" width="32" height="24" rx="3" fill="#f3e8da" stroke="#d8c8b4" strokeWidth="1" />
-                  </svg>
-                </div>
+                <div className="hero-arm" aria-hidden="true"></div>
+                <div className="hero-hand" aria-hidden="true"></div>
+                <div className="hero-chain" aria-hidden="true"></div>
+              </div>
+              <div className="hero-float" aria-hidden="true">
+                <svg viewBox="0 0 48 48" className="hero-swatch" aria-hidden="true">
+                  <rect x="2" y="6" width="44" height="36" rx="4" fill="#e9dfd2" stroke="#d8c8b4" strokeWidth="1.5" />
+                  <rect x="8" y="10" width="32" height="24" rx="3" fill="#f3e8da" stroke="#d8c8b4" strokeWidth="1" />
+                </svg>
               </div>
             </div>
           </div>
         </section>
+
         <section className="filters">
           <div className="filters-inner">
-            <a className="filter-tab filter-tab--active" href="#">Shirts &gt;</a>
-            <a className="filter-tab" href="#">Trousers &gt;</a>
-            <a className="filter-tab" href="#">Accessories &gt;</a>
+            <a className="filter-tab filter-tab--active" href="#">Shirts <span className="filter-arrow">&gt;</span></a>
+            <a className="filter-tab" href="#">Trousers <span className="filter-arrow">&gt;</span></a>
+            <a className="filter-tab" href="#">Outerwear <span className="filter-arrow">&gt;</span></a>
             <a className="filter-tab filter-tab--selected" href="#">Accessories</a>
           </div>
         </section>
@@ -97,6 +96,7 @@ export default function Home() {
             <div className="product-grid">
               <article className="product">
                 <div className="product-image">
+                  <span className="product-badge">2</span>
                   <div className="product-icon" aria-hidden="true">
                     <svg viewBox="0 0 24 24" className="icon-cart" aria-hidden="true">
                       <circle cx="9" cy="21" r="1.4" fill="#000" />
@@ -119,6 +119,7 @@ export default function Home() {
 
               <article className="product">
                 <div className="product-image">
+                  <span className="product-badge">4</span>
                   <div className="product-icon" aria-hidden="true">
                     <svg viewBox="0 0 24 24" className="icon-cart" aria-hidden="true">
                       <circle cx="9" cy="21" r="1.4" fill="#000" />
@@ -129,7 +130,7 @@ export default function Home() {
                   <div className="product-image__visual" aria-hidden="true">
                     <div className="product-cloak" aria-hidden="true"></div>
                     <div className="product-body" aria-hidden="true">
-                      <div className="product-jacket" aria-hidden="true"></div>
+                      <div className="product-shirt product-shirt--black" aria-hidden="true"></div>
                     </div>
                   </div>
                 </div>
@@ -141,6 +142,7 @@ export default function Home() {
 
               <article className="product">
                 <div className="product-image">
+                  <span className="product-badge">3</span>
                   <div className="product-icon" aria-hidden="true">
                     <svg viewBox="0 0 24 24" className="icon-cart" aria-hidden="true">
                       <circle cx="9" cy="21" r="1.4" fill="#000" />
@@ -151,7 +153,7 @@ export default function Home() {
                   <div className="product-image__visual" aria-hidden="true">
                     <div className="product-cloak" aria-hidden="true"></div>
                     <div className="product-body" aria-hidden="true">
-                      <div className="product-jacket product-jacket--cream" aria-hidden="true"></div>
+                      <div className="product-shirt product-shirt--cream" aria-hidden="true"></div>
                     </div>
                   </div>
                 </div>
@@ -163,6 +165,7 @@ export default function Home() {
 
               <article className="product">
                 <div className="product-image">
+                  <span className="product-badge">4</span>
                   <div className="product-icon" aria-hidden="true">
                     <svg viewBox="0 0 24 24" className="icon-cart" aria-hidden="true">
                       <circle cx="9" cy="21" r="1.4" fill="#000" />
@@ -173,13 +176,26 @@ export default function Home() {
                   <div className="product-image__visual" aria-hidden="true">
                     <div className="product-cloak" aria-hidden="true"></div>
                     <div className="product-body" aria-hidden="true">
-                      <div className="product-jacket product-jacket--black product-jacket--bomber" aria-hidden="true"></div>
+                      <div className="product-jacket product-jacket--black product-jacket--zip" aria-hidden="true"></div>
                     </div>
                   </div>
                 </div>
                 <div className="product-body-wrap">
                   <h3 className="product-title">Lightweight Jacket</h3>
                   <p className="product-price">AED 249</p>
+                </div>
+              </article>
+
+              <article className="product product--promo">
+                <div className="product-image"></div>
+                <div className="product-body-wrap product-body-wrap--promo">
+                  <h3 className="product-title">Designed for</h3>
+                  <p className="product-price">movement, built<br />for everyday</p>
+                  <p className="promo-sub">CLOTHING SIZES &amp; SPECIALS</p>
+                  <div className="promo-dots">
+                    <span className="promo-dot"></span>
+                    <span className="promo-dot"></span>
+                  </div>
                 </div>
               </article>
             </div>
